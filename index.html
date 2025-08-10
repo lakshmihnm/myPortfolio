@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal Portpolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/017a920cc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo"/>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi I am <span>Lakshmi</span>,<br> Welcome to My Portfolio</h1>
+        </div>
+    </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Frontend Developer with a passion for creating beautiful and functional web applications. 
+                        I have experience in HTML, CSS, JavaScript, and various frontend frameworks. 
+                        My goal is to build user-friendly interfaces that enhance the user experience.
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML&CSS</span><br>Creating User interfaces with styles</li>
+                                <li><span>JavaScript</span><br>Adding interactivity to web pages</li>
+                                <li><span>Reactjs</span><br>Building dynamic web applications</li>
+                                <li><span>Node.js</span><br>Server-side development</li>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>current Publicis Sapient</span><br>Associate Engineer L2</li>
+                                <li><span>2021 Quess Corp</span><br>Frontend Developer</li>
+                                <li><span>2017 - 2021 Fork Technologies</span><br>Software Engineer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017 - Master of Computer Applications</span><br>Visvesvaraya technological University Belagavi</li>
+                                <li><span>2014 - Bachulor fo Computer Applications</span><br>Oxford College Hubballi</li>
+                               
+                            </ul>
+                        </div>
+                    </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-col">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Responsive UI Development</h3>
+                    <p>Crafting pixel-perfect interfaces that work flawlessly across devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-col">
+                   <i class="fa-solid fa-crop"></i>
+                    <h3>API Integration</h3>
+                    <p>Seamless communication between frontend and backend using REST and GraphQL.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-col">
+                   <i class="fa-brands fa-app-store"></i>
+                    <h3>React & Next.js Applications</h3>
+                    <p>Building dynamic, SEO-friendly, and performant web apps.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div class="service-col">
+                    <i class="fa-light fa-flask-vial"></i>
+                    <h3>Testing & Mocking</h3>
+                    <p>Writing robust test cases and creating mock servers for reliable development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-col">
+                  
+                   <i class="fa-solid fa-chart-line-up"></i>
+                    <h3>Performance Optimization</h3>
+                    <p>Enhancing load times and user experience through efficient code and architecture.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+     </div>
+<!-- ******Portfolio********* -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" />
+                <div class="layer">
+                    <h3>Banking Application</h3>
+                    <p>The app provides the details about spend analysis of selected month or week. </p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" />
+                <div class="layer">
+                    <h3>Telecommunication App</h3>
+                    <p>The app that has the plan details and shopping offers. </p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg" />
+                <div class="layer">
+                    <h3>URLbot App</h3>
+                    <p>The app contains the important links we use daily and segragated as modules and sub modules.</p>
+                    <a href="https://urlbot-now.vercel.app/"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!-- **********Contact************* -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0987654321</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/resume_lakshmi.pdf" download class="btn btn2">Download CV</a>
+            </div>
+             <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lakshmi, Made with <i class="fa-solid fa-heart"></i>for easy understanding of my profile</p>
+    </div>
+  </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function openTab(tabName) {
+    console.log("tabName:", tabName);
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzcNMJ4Tm2MBNjA3dqROickzuT00V9unscjleS2AiZZxgZPe2Et_d5e7EYIEpEhiqWHEQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function() {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
